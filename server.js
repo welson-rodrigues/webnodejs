@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
  res.json({ message: "Bem-vindo ao Tutorial de Webservices em Node.Js." });
 });
 require("./app/routes/aluno.routes.js")(app);
+require("./app/routes/livro.routes.js")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
